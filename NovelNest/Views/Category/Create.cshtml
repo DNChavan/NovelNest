@@ -1,0 +1,41 @@
+﻿<div class="container">
+
+    <h2 class="text-primary">Category List</h2>
+
+<from method = "post">
+
+    <label for="exampleInputEmail1" class="form-label mt-4">Category Name </label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+
+    <label for="exampleInputEmail1" class="form-label mt-4">Display Order</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+
+    <div class="row">
+
+        <div class="col-1">
+            <button type="button" class="btn btn-outline-success">Create</button>
+
+        </div>
+
+        <div class="col-2" >
+           
+             <a asp-controller="Category" asp-action="Index"  class=" btn btn-outline-info" >View List</a>
+
+        </div>
+ </div>
+    
+</from>
+</div>
+<style>
+    .container {
+        width: 80%; /* Adjust the width as needed (e.g., 50%, 60%, etc.) */
+        margin: 0 auto; /* Center the table horizontally */
+    }
+
+    .row{
+        margin-top: 20px
+    
+      }
+</style>
+
+
